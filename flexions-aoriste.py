@@ -7,7 +7,7 @@ sentences=[]
 def form_COI(word,suffixes_COI):
     list=[]
     for x in suffixes_COI:
-        if x[0] !='y':
+        if x[0] !='y' or ( x =='yi') :
             list.append("ad "+x+"-"+word)
     return list
 
@@ -71,7 +71,7 @@ def form_COI_COD_Dir(word,suffixes_COI,suffixes_COD,suffix_dir):
     return list
 
 
-words=["ad yefk"]
+words=["ad glun"]
 ##for i in words:
 ##    form_COI(i,suffixes_COI)
 ##for i in words:
